@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5th Students' Research Day - Agenda</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@500;600;700&display=swap');
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background: radial-gradient(circle at center, #1b003a 0%, #080012 100%);
+            color: #ffffff;
+            font-family: 'Rajdhani', sans-serif;
+            margin: 0;
+            padding: 40px 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 750px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(168, 85, 247, 0.25);
+            border-radius: 20px;
+            padding: 40px 30px;
+            box-shadow: 0 0 40px rgba(147, 51, 234, 0.15);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+
+        .header-section {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-family: 'Orbitron', sans-serif;
+            color: #e9d5ff;
+            font-size: 2.2rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin: 0 0 10px 0;
+            text-shadow: 0 0 20px rgba(168, 85, 247, 0.75);
+            animation: pulse 3s infinite alternate;
+        }
+
+        h3 {
+            color: #a855f7;
+            font-size: 1.2rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin: 0;
+        }
+
+        .timeline {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .row {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            background: rgba(15, 3, 25, 0.7);
+            border-left: 4px solid #a855f7;
+            border-radius: 6px;
+            padding: 20px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            border-top: 1px solid rgba(255, 255, 255, 0.02);
+        }
+
+        .row:hover {
+            border-left-color: #f3e8ff;
+            box-shadow: 0 0 20px rgba(168, 85, 247, 0.35);
+            transform: translateX(4px);
+            background: rgba(28, 5, 46, 0.8);
+        }
+
+        .time {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.1rem;
+            color: #c084fc;
+            width: 30%;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-shadow: 0 0 8px rgba(192, 132, 252, 0.3);
+        }
+
+        .session {
+            font-size: 1.25rem;
+            color: #ffffff;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            width: 70%;
+        }
+
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #7045af;
+            border-top: 1px solid rgba(168, 85, 247, 0.2);
+            padding-top: 25px;
+            letter-spacing: 1px;
+        }
+
+        @keyframes pulse {
+            0% { text-shadow: 0 0 15px rgba(168, 85, 247, 0.6); }
+            100% { text-shadow: 0 0 25px rgba(192, 132, 252, 0.9), 0 0 10px rgba(168, 85, 247, 0.4); }
+        }
+
+        /* Responsive Layout for Mobile Screens */
+        @media (max-width: 600px) {
+            body { padding: 20px 10px; }
+            .container { padding: 30px 15px; }
+            h1 { font-size: 1.6rem; }
+            h3 { font-size: 1rem; }
+            .row { flex-direction: column; align-items: flex-start; gap: 8px; }
+            .time { width: 100%; font-size: 1rem; }
+            .session { width: 100%; font-size: 1.1rem; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header-section">
+        <h1>5th Students' Research Day</h1>
+        <h3>5 Years of Ideas, Innovation, and Impact</h3>
+    </div>
+    
+    <div class="timeline">
+        <div class="row">
+            <div class="time">03:30 – 04:00</div>
+            <div class="session">Guest Arrival & Registration</div>
+        </div>
+        <div class="row">
+            <div class="time">04:00 – 04:10</div>
+            <div class="session">Opening Ceremony</div>
+        </div>
+        <div class="row">
+            <div class="time">04:10 – 05:00</div>
+            <div class="session">Student Project Showcase & Jury Evaluation</div>
+        </div>
+        <div class="row">
+            <div class="time">05:00 – 06:00</div>
+            <div class="session">Networking & Refreshments</div>
+        </div>
+        <div class="row">
+            <div class="time">06:00 – 07:00</div>
+            <div class="session">Award Ceremony & Lucky Draw</div>
+        </div>
+    </div>
+
+    <footer>
+        GLOBAL COLLEGE OF ENGINEERING AND TECHNOLOGY<br>
+        <span style="font-size: 0.8rem; opacity: 0.8;">In Partnership with UWE Bristol</span>
+    </footer>
+</div>
+
+</body>
+</html>
